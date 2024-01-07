@@ -17,11 +17,6 @@ li {
     /* border: 1px solid black; */
 }
 
-li:hover {  
-    color: white;  
-    background-color: rgb(220, 20, 110); 
-}
-
 a {
     display: block;
     padding: 20px;    
@@ -31,7 +26,8 @@ a {
 }
 
 a:hover {
-    color: rgb(220, 20, 110);    
+    color: rgb(255, 255, 255);  
+    background-color: rgb(220, 20, 110);  
 }
 
 .mega {

@@ -1,4 +1,4 @@
-.menu {
+.menu-container {
     background-color: #cfcfcf;
 }
 
@@ -21,7 +21,7 @@ input {
 }
 
 label {
-    width: 100%;
+    display: block;
     margin: 0;
     padding: 20px;
     text-align: center;
