@@ -1,0 +1,57 @@
+header {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #252b6a;
+    height: 300px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif !important;
+    margin-top: 10px;
+    color: white;
+}
+
+a:hover {
+    background: white;
+    color: #252b6a;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-header {
+    position: relative;    
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu-header:hover .menu {
+    display: block;
+}
+
+.menu {
+    margin-top: 50px;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    display: none;
+}
+
+.menu a {
+    display: block;
+}

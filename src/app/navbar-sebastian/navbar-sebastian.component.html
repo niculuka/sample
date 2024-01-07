@@ -1,0 +1,39 @@
+<nav>
+    <div class="container">
+
+
+        <div class="shrink">
+
+            <li class="logo">
+                <a class="logo-item">Logotype</a>
+            </li>
+
+            <li class="burger" (click)="wideMenu()">                
+                <label for="check" class="checkbtn">{{wide ? "🗙" : "☰"}} </label>
+            </li>
+
+        </div>
+
+        <input type="checkbox" id="check">
+
+
+
+
+
+        <div class="menu">
+            <li>
+                <a class="menu-item" href="sebastian">Home</a>
+                <a class="menu-item" href="sebastian">About</a>
+                <a class="menu-item" href="sebastian">Login</a>
+                <a class="menu-item" href="sebastian">Contact</a>
+            </li>
+        </div>
+
+
+    </div>
+</nav>
+
+
+
+<!-- <input type="checkbox" id="check" #saveCheckBox [checked]="!checked"
+(change)="saveChecked(saveCheckBox.checked)"> -->

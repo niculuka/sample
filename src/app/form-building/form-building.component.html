@@ -1,0 +1,33 @@
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+    <label>Email
+        <input type="email" formControlName="email">
+    </label><br>
+
+    <div class="errors" *ngIf="loginForm.controls['email'].errors && isSubmitted">
+        <div *ngIf="loginForm.controls['email'].errors['required']">Empty email!</div>
+        <div *ngIf="loginForm.controls['email'].errors['email']">Email must be valid!</div>
+    </div>
+    <br><br>
+    
+
+
+
+    <label>Password
+        <input type="password" formControlName="password">
+    </label><br>
+
+    <div class="errors" *ngIf="loginForm.controls['password'].errors && isSubmitted">
+        <div *ngIf="loginForm.controls['password'].errors['required']">Empty password!</div>
+        <div *ngIf="loginForm.controls['password'].errors['minlength']">Insert minimum 4 character!</div>
+        <div *ngIf="loginForm.controls['password'].errors['maxlength']">Insert maximum 8 character!</div>
+    </div>
+    <br><br>
+
+
+
+    <button type="submit" style="width: 145px;">Login</button>
+
+</form>
+
+<br><br><br><br>

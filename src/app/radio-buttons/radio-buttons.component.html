@@ -1,0 +1,43 @@
+<p></p>
+
+
+<div *ngFor="let day of days">
+
+    <input type="radio" name="dayOfTheWeek">
+
+    <label for="name" name="name" value="1">{{day}}</label>
+
+</div>
+
+
+
+<p><span>You selected: </span><b>{{selectedDay}}</b></p>
+
+
+<p>_________________________________________________________________________________</p>
+
+
+<input type="radio"  [(ngModel)]="delivery" >
+<input type="radio"  [(ngModel)]="pickUp" >
+
+
+<h2>{{delivery}}</h2>
+
+
+
+
+
+
+
+<p>_________________________________________________________________________________</p>
+<input type="text"  [(ngModel)]="title">
+
+<h2>{{title}}</h2>
+
+
+
+
+
+<!-- <label for="description">Description</label>
+
+<input type="text" [(ngModel)]="product.description"> -->

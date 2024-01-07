@@ -1,0 +1,12 @@
+<div class="child">
+
+    <h1>CHILD 1 : {{getParentMessage}}</h1>
+
+
+    <div *ngFor="let getParentMessage of getParentMessageArray">
+        <h3>{{getParentMessage.id}}</h3>
+        <h4>{{getParentMessage.name}}</h4>
+        <hr>
+    </div>
+
+</div>

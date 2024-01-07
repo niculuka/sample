@@ -1,0 +1,66 @@
+.menu {
+    background-color: #cfcfcf;
+}
+
+ul {
+    position: relative;
+    margin-left: 400px;
+    width: 200px;
+    padding: 0;
+    list-style: none;
+    /* border: 1px solid black; */
+}
+
+li {
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+input {
+    display: none;
+}
+
+label {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid rgb(220, 20, 110);
+}
+
+.mega {
+    display: none;
+    position: absolute;
+    list-style: none;
+    top: 0px;
+    left: 200px;
+    width: 800px;
+    text-align: left;
+    padding: 0;
+    z-index: 99;
+    border: 2px solid rgb(220, 20, 110);
+}
+
+/* ======================================== */
+input:checked+label {
+    color: white;
+    background-color: rgb(220, 20, 110);
+}
+input:checked+label+.mega {
+    display: block;
+}
+
+/* ======================================== */
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+h1:hover {
+    background: gray;
+}
