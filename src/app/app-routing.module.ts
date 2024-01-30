@@ -29,6 +29,7 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { GetUrlComponent } from './get-url/get-url.component';
 import { MegaMenuHoverComponent } from './mega-menu-hover/mega-menu-hover.component';
 import { MegaMenuClickComponent } from './mega-menu-click/mega-menu-click.component';
+import { TableMatSorterComponent } from './table-mat-sorter/table-mat-sorter.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -75,6 +76,8 @@ const routes: Routes = [
   { path: "mega-menu-hover", component: MegaMenuHoverComponent },
   { path: "mega-menu-click", component: MegaMenuClickComponent },
 
+  { path: "table-mat-sorter", component: TableMatSorterComponent },
+  
 ];
 
 @NgModule({

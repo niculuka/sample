@@ -42,7 +42,11 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { GetUrlComponent } from './get-url/get-url.component';
 import { MegaMenuHoverComponent } from './mega-menu-hover/mega-menu-hover.component';
 import { MegaMenuClickComponent } from './mega-menu-click/mega-menu-click.component';
-
+import { TableMatSorterComponent } from './table-mat-sorter/table-mat-sorter.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -76,6 +80,7 @@ import { MegaMenuClickComponent } from './mega-menu-click/mega-menu-click.compon
     GetUrlComponent,
     MegaMenuHoverComponent,
     MegaMenuClickComponent,
+    TableMatSorterComponent,
   ],
   imports: [
     BrowserModule,
@@ -89,7 +94,11 @@ import { MegaMenuClickComponent } from './mega-menu-click/mega-menu-click.compon
     ReactiveFormsModule,
     MatMenuModule,
     NgbModule,
-    LayoutModule
+    LayoutModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
