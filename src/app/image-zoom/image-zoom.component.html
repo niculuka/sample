@@ -1,0 +1,14 @@
+<div class="container">
+
+
+    <div class="image-container">
+
+        <img src="assets/images/mercedes3.jpg" (mousemove)="log($event)" (mouseleave)="out()"
+        [style]="{'transform-origin': mousePosition, 'transform': imageScale}">
+
+    </div>
+
+
+</div>
+
+<h1>{{mousePosition}}</h1>

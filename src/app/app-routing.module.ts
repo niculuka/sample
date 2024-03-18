@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormBuildingComponent } from './form-building/form-building.component';
-import { NavbarMaterialComponent } from './navbar-material/navbar-material.component';
 import { NavbarSebastianComponent } from './navbar-sebastian/navbar-sebastian.component';
 import { RadioButtonsComponent } from './radio-buttons/radio-buttons.component';
 import { TableWrapCellsComponent } from './table-wrap-cells/table-wrap-cells.component';
@@ -10,7 +9,6 @@ import { BindChild2Component } from './bind-child2/bind-child2.component';
 import { BindParent1Component } from './bind-parent1/bind-parent1.component';
 import { BindParent2Component } from './bind-parent2/bind-parent2.component';
 import { DoubleComponent } from './double/double.component';
-import { NavbarMaterial2Component } from './navbar-material2/navbar-material2.component';
 import { ClickOutsideComponent } from './click-outside/click-outside.component';
 import { NgModelComponent } from './ng-model/ng-model.component';
 import { FormGroupComponent } from './form-group/form-group.component';
@@ -30,8 +28,14 @@ import { GetUrlComponent } from './get-url/get-url.component';
 import { MegaMenuHoverComponent } from './mega-menu-hover/mega-menu-hover.component';
 import { MegaMenuClickComponent } from './mega-menu-click/mega-menu-click.component';
 import { TableMatSorterComponent } from './table-mat-sorter/table-mat-sorter.component';
+import { FormTemplateComponent } from './form-template/form-template.component';
+import { BindObjectParentComponent } from './bind-object-parent/bind-object-parent.component';
+import { BindObjectChildComponent } from './bind-object-child/bind-object-child.component';
+import { NavbarMatComponent } from './navbar-mat/navbar-mat.component';
+import { RandomComponent } from './random/random.component';
+import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "home", component: HomeComponent },
 
@@ -40,11 +44,11 @@ const routes: Routes = [
   { path: "input", component: InputDesignComponent },
   { path: "ng-for", component: NgForComponent },
 
-  { path: "dent", component: NavbarDentComponent },
-  { path: "nepal", component: NavbarNepalComponent },
-  { path: "sebastian", component: NavbarSebastianComponent },
-  { path: "material", component: NavbarMaterialComponent },
-  { path: "material2", component: NavbarMaterial2Component },
+  { path: "navbar-dent", component: NavbarDentComponent },
+  { path: "navbar-nepal", component: NavbarNepalComponent },
+  { path: "navbar-sebastian", component: NavbarSebastianComponent },
+  { path: "navbar-mat", component: NavbarMatComponent },
+
   { path: "click-outside", component: ClickOutsideComponent },
 
   { path: "radio-buttons", component: RadioButtonsComponent },
@@ -54,11 +58,15 @@ const routes: Routes = [
   { path: "model", component: NgModelComponent },
   { path: "group", component: FormGroupComponent },
   { path: "building", component: FormBuildingComponent },
+  { path: "form-template", component: FormTemplateComponent },
 
   { path: "parent1", component: BindParent1Component },
   { path: "parent2", component: BindParent2Component },
   { path: "child1", component: BindChild1Component },
   { path: "child2", component: BindChild2Component },
+
+  { path: "object-parent", component: BindObjectParentComponent },
+  { path: "object-child", component: BindObjectChildComponent },
 
   { path: "double", component: DoubleComponent },
 
@@ -77,6 +85,10 @@ const routes: Routes = [
   { path: "mega-menu-click", component: MegaMenuClickComponent },
 
   { path: "table-mat-sorter", component: TableMatSorterComponent },
+
+  { path: "random", component: RandomComponent },
+
+  { path: "image-zoom", component: ImageZoomComponent },
   
 ];
 

@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarDentComponent } from './navbar-dent/navbar-dent.component';
 import { NavbarSebastianComponent } from './navbar-sebastian/navbar-sebastian.component';
-import { NavbarMaterialComponent } from './navbar-material/navbar-material.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 
@@ -22,7 +21,7 @@ import { BindChild2Component } from './bind-child2/bind-child2.component';
 import { BindParent1Component } from './bind-parent1/bind-parent1.component';
 import { BindParent2Component } from './bind-parent2/bind-parent2.component';
 import { DoubleComponent } from './double/double.component';
-import { NavbarMaterial2Component } from './navbar-material2/navbar-material2.component';
+import { NavbarMatComponent } from './navbar-mat/navbar-mat.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { ClickOutsideComponent } from './click-outside/click-outside.component';
 import { NgbModule, } from '@ng-bootstrap/ng-bootstrap';
@@ -47,6 +46,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormTemplateComponent } from './form-template/form-template.component';
+import { BindObjectParentComponent } from './bind-object-parent/bind-object-parent.component';
+import { BindObjectChildComponent } from './bind-object-child/bind-object-child.component';
+import { RandomComponent } from './random/random.component';
+import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +59,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     HomeComponent,
     NavbarNepalComponent,
     NavbarSebastianComponent,
-    NavbarMaterialComponent,
     RadioButtonsComponent,
     TableWrapCellsComponent,
     FormBuildingComponent,
@@ -65,7 +68,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BindChild2Component,
     BindParent2Component,
     DoubleComponent,
-    NavbarMaterial2Component,
+    NavbarMatComponent,
     NgModelComponent,
     ClickOutsideComponent,
     CarouselPauseComponent,
@@ -81,6 +84,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MegaMenuHoverComponent,
     MegaMenuClickComponent,
     TableMatSorterComponent,
+    FormTemplateComponent,
+    BindObjectParentComponent,
+    BindObjectChildComponent,
+    RandomComponent,
+    ImageZoomComponent,
   ],
   imports: [
     BrowserModule,

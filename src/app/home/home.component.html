@@ -1,1 +1,5 @@
-<p>home works!</p>
+<ol>
+    <li *ngFor="let link of links">
+        <a [routerLink]="'/' + link.path">{{link.path}}</a>
+    </li>
+</ol>
