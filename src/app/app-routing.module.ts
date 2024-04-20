@@ -34,6 +34,7 @@ import { BindObjectChildComponent } from './bind-object-child/bind-object-child.
 import { NavbarMatComponent } from './navbar-mat/navbar-mat.component';
 import { RandomComponent } from './random/random.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
+import { ScrollComponent } from './scroll/scroll.component';
 
 export const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -89,6 +90,8 @@ export const routes: Routes = [
   { path: "random", component: RandomComponent },
 
   { path: "image-zoom", component: ImageZoomComponent },
+
+  { path: "scroll", component: ScrollComponent },
   
 ];
 

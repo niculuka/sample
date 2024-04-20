@@ -51,6 +51,7 @@ import { BindObjectParentComponent } from './bind-object-parent/bind-object-pare
 import { BindObjectChildComponent } from './bind-object-child/bind-object-child.component';
 import { RandomComponent } from './random/random.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
+import { ScrollComponent } from './scroll/scroll.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,7 @@ import { ImageZoomComponent } from './image-zoom/image-zoom.component';
     BindObjectChildComponent,
     RandomComponent,
     ImageZoomComponent,
+    ScrollComponent,
   ],
   imports: [
     BrowserModule,

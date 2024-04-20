@@ -1,0 +1,33 @@
+p {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+
+
+
+
+
+
+/* ================================================= */
+.navbar {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    background: red;
+}
+
+.nofixed {
+    position: relative;
+    background: yellow;
+}
+
+
