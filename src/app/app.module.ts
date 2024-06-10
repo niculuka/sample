@@ -8,6 +8,7 @@ import { NavbarDentComponent } from './navbar-dent/navbar-dent.component';
 import { NavbarSebastianComponent } from './navbar-sebastian/navbar-sebastian.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -52,6 +53,9 @@ import { BindObjectChildComponent } from './bind-object-child/bind-object-child.
 import { RandomComponent } from './random/random.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 import { ScrollComponent } from './scroll/scroll.component';
+import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
+import { DragDropGridComponent } from './drag-drop-grid/drag-drop-grid.component';
+import { DragDndGridComponent } from './drag-dnd-grid/drag-dnd-grid.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +95,9 @@ import { ScrollComponent } from './scroll/scroll.component';
     RandomComponent,
     ImageZoomComponent,
     ScrollComponent,
+    DragAndDropComponent,
+    DragDropGridComponent,
+    DragDndGridComponent,
   ],
   imports: [
     BrowserModule,
@@ -109,6 +116,7 @@ import { ScrollComponent } from './scroll/scroll.component';
     MatSortModule,
     MatPaginatorModule,
     MatFormFieldModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent],

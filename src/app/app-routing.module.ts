@@ -35,6 +35,9 @@ import { NavbarMatComponent } from './navbar-mat/navbar-mat.component';
 import { RandomComponent } from './random/random.component';
 import { ImageZoomComponent } from './image-zoom/image-zoom.component';
 import { ScrollComponent } from './scroll/scroll.component';
+import { DragAndDropComponent } from './drag-and-drop/drag-and-drop.component';
+import { DragDropGridComponent } from './drag-drop-grid/drag-drop-grid.component';
+import { DragDndGridComponent } from './drag-dnd-grid/drag-dnd-grid.component';
 
 export const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -92,6 +95,10 @@ export const routes: Routes = [
   { path: "image-zoom", component: ImageZoomComponent },
 
   { path: "scroll", component: ScrollComponent },
+
+  { path: "drag-and-drop", component: DragAndDropComponent },
+  { path: "drag-dnd-grid", component: DragDndGridComponent },
+  { path: "drag-drop-grid", component: DragDropGridComponent },
   
 ];
 
